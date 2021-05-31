@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website  Design</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+    <!----------------- section header ----------------->
+    <section class="sub-header">
+        <!-- navbar -->
+        <nav>
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">accueil</a></li>
+                    <li><a href="about.html">à propos</a></li>
+                    <li><a href="courses.html">cours</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>A propos de nous</h1>
+        </div>
+    </section>
+
+    <!----------------- about us content ----------------->
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h2>Nous sommes la plus grande université au monde</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, deleniti fuga sunt quae voluptates molestias perspiciatis sequi quidem laborum magnam iste ea in amet autem quaerat molestiae minima! Maiores iste ad sit modi, quaerat, quisquam voluptate non odit natus facere dolores dolorem illo consectetur provident in unde dicta doloremque vitae! Eveniet, hic iste. Maxime hic, cum magni amet ullam harum quod sed temporibus incidunt distinctio numquam dolore deleniti, laborum qui.
+                </p>
+                <a href="#" class="hero-btn red-btn">PARCOURIR MAINTENANT</a>
+            </div>
+            <div class="about-col">
+                <img src="img/about.jpg" alt="une équipe de collabarteurs prenant une pause pour la photo">
+            </div>
+        </div>
+    </section>
+
+    <!----------------- footer page ----------------->
+    <section class="footer">
+        <h4>A propos de nous</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit asperiores labore error atque perspiciatis <br> illum totam officiis eius at quaerat repellendus, cumque corporis, qui sint.
+        </p>
+        <div class="icons">
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-linkedin fa-2x"></i>
+        </div>
+        <p>Made width <i class="fas fa-heart"></i> by Th. Malik DIALLO</p>
+    </section>
+
+
+
+    <!-- javascript pour le toggle menu -->
+    <script>
+        var navLinks = document.querySelector('#navLinks');
+
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+
+        function hideMenu(){
+            navLinks.style.right='-200px'
+        }
+    </script>
+</body>
+</html>
+
